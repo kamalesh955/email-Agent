@@ -1,0 +1,140 @@
+[
+  {
+    "from": "alice@company.com",
+    "to": "you@company.com",
+    "subject": "Request: Q2 marketing budget approval",
+    "date": "2025-09-01",
+    "body": "Hi,\n\nCan you approve the Q2 marketing budget? We need a decision by Friday. Attached are the numbers.\n\nThanks,\nAlice",
+    "archived": true,
+    "category": {
+      "labels": [
+        "marketing",
+        "budget",
+        "approval"
+      ],
+      "priority": "high",
+      "summary": "Alice needs approval for the Q2 marketing budget by Friday. The budget details are attached."
+    },
+    "action_items": [
+      "```json",
+      "[",
+      "\"Approve the Q2 marketing budget\",",
+      "\"Make a decision by Friday\"",
+      "]",
+      "```"
+    ]
+  },
+  {
+    "from": "bob@startup.com",
+    "to": "you@company.com",
+    "subject": "Meeting: Product sync (tomorrow)",
+    "date": "2025-10-20",
+    "body": "Hello,\n\nCan we meet tomorrow at 10am to sync on the product roadmap? Please confirm or propose another time.\n\nRegards,\nBob",
+    "archived": false
+  },
+  {
+    "from": "carol@vendor.com",
+    "to": "you@company.com",
+    "subject": "Invoice INV-2025-017 (overdue)",
+    "date": "2025-10-15",
+    "body": "Dear team,\n\nOur records show invoice INV-2025-017 is overdue by 10 days. Please arrange payment or contact us to discuss.\n\nBest,\nCarol",
+    "archived": false,
+    "category": {
+      "labels": [
+        "invoice",
+        "payment reminder",
+        "overdue"
+      ],
+      "priority": "high",
+      "summary": "Invoice INV-2025-017 is 10 days overdue. Payment or discussion is requested."
+    }
+  },
+  {
+    "from": "dave@partner.org",
+    "to": "you@company.com",
+    "subject": "Collaboration opportunity - quick chat?",
+    "date": "2025-10-01",
+    "body": "Hi,\n\nWe have a potential collaboration on research. Interested in a 20-min intro call next week?\n\nThanks,\nDave",
+    "archived": false
+  },
+  {
+    "from": "eve@security.com",
+    "to": "you@company.com",
+    "subject": "Security patch notice - action required",
+    "date": "2025-11-01",
+    "body": "All,\n\nA critical security patch is available. Please update servers by Nov 10. See attached instructions.\n\n- Security Team",
+    "archived": true,
+    "action_items": [
+      "```json",
+      "[",
+      "\"Update servers by Nov 10\",",
+      "\"Review attached instructions\"",
+      "]",
+      "```"
+    ]
+  },
+  {
+    "from": "frank@hr.com",
+    "to": "you@company.com",
+    "subject": "Reminder: submit timesheet",
+    "date": "2025-11-10",
+    "body": "Hi,\n\nFriendly reminder to submit your timesheet for the last pay period. Deadline EOD today.\n\nThanks,\nHR",
+    "archived": true
+  },
+  {
+    "from": "gina@client.com",
+    "to": "you@company.com",
+    "subject": "Feature request: dark mode",
+    "date": "2025-11-08",
+    "body": "Hello,\n\nCould you add dark mode to the product? Many users requested it. Let us know feasibility and timeline.\n\nRegards,\nGina",
+    "archived": false
+  },
+  {
+    "from": "harry@ops.com",
+    "to": "you@company.com",
+    "subject": "On-call rotation update",
+    "date": "2025-11-11",
+    "body": "Team,\n\nThe on-call rotation has changed. Please check the shared calendar and update your availability.\n\nOps",
+    "archived": false
+  },
+  {
+    "from": "isabel@sales.com",
+    "to": "you@company.com",
+    "subject": "Demo request from Acme Corp",
+    "date": "2025-11-12",
+    "body": "Hi,\n\nAcme Corp requested a product demo next Tuesday. Can you prepare slides and confirm availability?\n\nThanks,\nIsabel",
+    "archived": false
+  },
+  {
+    "from": "jack@legal.com",
+    "to": "you@company.com",
+    "subject": "Contract review needed",
+    "date": "2025-11-05",
+    "body": "Please review the attached contract and share redlines by Nov 20.\n\n- Legal",
+    "archived": false
+  },
+  {
+    "from": "karen@events.com",
+    "to": "you@company.com",
+    "subject": "Invitation: Tech conference speaker?",
+    "date": "2025-10-30",
+    "body": "We invite you to speak at our tech conference. Are you interested? We need confirmation by Nov 3.\n\nBest,\nKaren",
+    "archived": false,
+    "category": {
+      "labels": [
+        "conference invitation",
+        "speaking engagement"
+      ],
+      "priority": "high",
+      "summary": "Invitation to speak at a tech conference. Confirmation needed by November 3rd."
+    }
+  },
+  {
+    "from": "li@interns.com",
+    "to": "you@company.com",
+    "subject": "Volunteer for onboarding session",
+    "date": "2025-11-13",
+    "body": "Hey,\n\nWe need volunteers to host onboarding. Can you be available on Nov 21? Please say yes/no.\n\nCheers,\nLi",
+    "archived": false
+  }
+]

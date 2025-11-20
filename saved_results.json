@@ -1,0 +1,488 @@
+{
+  "drafts": [
+    {
+      "time": "2025-11-20 15:35:25.111994",
+      "email_idx": 10,
+      "subject": "Re: Invitation: Tech conference speaker?",
+      "body": "Subject: Re: Invitation to Speak at Tech Conference\n\nDear Karen,\n\nThank you for the invitation to speak at your tech conference. I am very interested in the opportunity.\n\nCould you please provide more details regarding the conference dates, expected audience, and any specific topics you have in mind? This information will help me determine my availability and the most relevant presentation I can offer.\n\nI look forward to hearing from you soon.\n\nBest regards,\n\n[Your Name]",
+      "metadata": {
+        "category": {
+          "text": "[ERROR] Gemini SDK call failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-2.5-flash-lite\nPlease retry in 33.850069117s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash-lite\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 15\n}\n, retry_delay {\n  seconds: 33\n}\n]"
+        },
+        "action_items": [
+          "```json",
+          "[",
+          "\"Confirm interest in speaking at the tech conference by Nov 3.\"",
+          "]",
+          "```"
+        ]
+      }
+    }
+  ],
+  "analyses": [
+    {
+      "time": "2025-11-20 15:14:36.637327",
+      "type": "categorize",
+      "email_idx": 0,
+      "output": {
+        "labels": [
+          "marketing",
+          "budget",
+          "approval"
+        ],
+        "priority": "high",
+        "summary": "Alice needs approval for the Q2 marketing budget by Friday. The budget details are attached."
+      }
+    },
+    {
+      "time": "2025-11-20 15:15:17.101681",
+      "type": "categorize",
+      "email_idx": 5,
+      "output": {
+        "labels": [
+          "HR",
+          "Timesheet",
+          "Reminder"
+        ],
+        "priority": "high",
+        "summary": "Friendly reminder to submit timesheet by EOD today."
+      }
+    },
+    {
+      "time": "2025-11-20 15:20:26.883752",
+      "type": "ingest_batch",
+      "result": {
+        "email_idx": 0,
+        "category": {
+          "labels": [
+            "marketing",
+            "budget",
+            "approval"
+          ],
+          "priority": "high",
+          "summary": "Alice needs approval for the Q2 marketing budget by Friday. The budget details are attached."
+        },
+        "action_items": [
+          "```json",
+          "[",
+          "\"Approve the Q2 marketing budget\",",
+          "\"Make a decision by Friday\"",
+          "]",
+          "```"
+        ]
+      }
+    },
+    {
+      "time": "2025-11-20 15:20:26.883928",
+      "type": "ingest_batch",
+      "result": {
+        "email_idx": 1,
+        "category": {
+          "labels": [
+            "meeting request",
+            "product roadmap"
+          ],
+          "priority": "medium",
+          "summary": "Bob is requesting a meeting tomorrow at 10 am to discuss the product roadmap and asks for confirmation or an alternative time."
+        },
+        "action_items": [
+          "```json",
+          "[",
+          "\"Confirm availability for a meeting tomorrow at 10am to sync on the product roadmap.\",",
+          "\"Propose an alternative time if tomorrow at 10am does not work.\"",
+          "]",
+          "```"
+        ]
+      }
+    },
+    {
+      "time": "2025-11-20 15:20:26.884191",
+      "type": "ingest_batch",
+      "result": {
+        "email_idx": 2,
+        "category": {
+          "labels": [
+            "invoice",
+            "payment reminder",
+            "overdue"
+          ],
+          "priority": "high",
+          "summary": "Invoice INV-2025-017 is 10 days overdue. Payment or discussion is requested."
+        },
+        "action_items": [
+          "```json",
+          "[",
+          "\"Arrange payment for invoice INV-2025-017\",",
+          "\"Contact Carol to discuss invoice INV-2025-017 if payment cannot be arranged\"",
+          "]",
+          "```"
+        ]
+      }
+    },
+    {
+      "time": "2025-11-20 15:20:26.884213",
+      "type": "ingest_batch",
+      "result": {
+        "email_idx": 3,
+        "category": {
+          "labels": [
+            "collaboration",
+            "research",
+            "meeting"
+          ],
+          "priority": "medium",
+          "summary": "Dave is proposing a research collaboration and wants to schedule a 20-minute introductory call next week."
+        },
+        "action_items": [
+          "```json",
+          "[",
+          "\"Schedule a 20-minute intro call with Dave for next week.\"",
+          "]",
+          "```"
+        ]
+      }
+    },
+    {
+      "time": "2025-11-20 15:20:26.884229",
+      "type": "ingest_batch",
+      "result": {
+        "email_idx": 4,
+        "category": {
+          "labels": [
+            "security",
+            "urgent",
+            "update"
+          ],
+          "priority": "high",
+          "summary": "Critical security patch available. Servers must be updated by November 10th. Instructions attached."
+        },
+        "action_items": [
+          "```json",
+          "[",
+          "\"Update servers by Nov 10.\",",
+          "\"Review attached instructions for updating servers.\"",
+          "]",
+          "```"
+        ]
+      }
+    },
+    {
+      "time": "2025-11-20 15:20:26.884253",
+      "type": "ingest_batch",
+      "result": {
+        "email_idx": 5,
+        "category": {
+          "labels": [
+            "HR",
+            "Timesheet",
+            "Reminder"
+          ],
+          "priority": "high",
+          "summary": "Reminder to submit timesheet by EOD today."
+        },
+        "action_items": [
+          "```json",
+          "[",
+          "\"Submit your timesheet for the last pay period.\"",
+          "]",
+          "```"
+        ]
+      }
+    },
+    {
+      "time": "2025-11-20 15:20:26.884267",
+      "type": "ingest_batch",
+      "result": {
+        "email_idx": 6,
+        "category": {
+          "labels": [
+            "feature request",
+            "product development",
+            "user feedback"
+          ],
+          "priority": "high",
+          "summary": "User requests dark mode feature. Inquire about feasibility and timeline."
+        },
+        "action_items": [
+          "```json",
+          "[",
+          "\"Add dark mode to the product.\",",
+          "\"Determine the feasibility of adding dark mode.\",",
+          "\"Provide a timeline for implementing dark mode.\"",
+          "]",
+          "```"
+        ]
+      }
+    },
+    {
+      "time": "2025-11-20 15:20:26.884283",
+      "type": "ingest_batch",
+      "result": {
+        "email_idx": 7,
+        "category": {
+          "labels": [
+            "operations",
+            "team update",
+            "calendar"
+          ],
+          "priority": "medium",
+          "summary": "On-call rotation has changed. Team members need to update their availability on the shared calendar."
+        },
+        "action_items": [
+          "```json",
+          "[",
+          "\"Check the shared calendar for the on-call rotation.\",",
+          "\"Update your availability on the shared calendar.\"",
+          "]",
+          "```"
+        ]
+      }
+    },
+    {
+      "time": "2025-11-20 15:20:26.884298",
+      "type": "ingest_batch",
+      "result": {
+        "email_idx": 8,
+        "category": {
+          "text": "[ERROR] Gemini SDK call failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-2.5-flash-lite\nPlease retry in 34.790903493s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash-lite\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 15\n}\n, retry_delay {\n  seconds: 34\n}\n]"
+        },
+        "action_items": [
+          "[ERROR] Gemini SDK call failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit.",
+          "* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-2.5-flash-lite",
+          "Please retry in 34.565120879s. [links {",
+          "description: \"Learn more about Gemini API quotas\"",
+          "url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"",
+          "}",
+          ", violations {",
+          "quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"",
+          "quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"",
+          "quota_dimensions {",
+          "key: \"model\"",
+          "value: \"gemini-2.5-flash-lite\"",
+          "}",
+          "quota_dimensions {",
+          "key: \"location\"",
+          "value: \"global\"",
+          "}",
+          "quota_value: 15",
+          "}",
+          ", retry_delay {",
+          "seconds: 34",
+          "}",
+          "]"
+        ]
+      }
+    },
+    {
+      "time": "2025-11-20 15:20:26.884314",
+      "type": "ingest_batch",
+      "result": {
+        "email_idx": 9,
+        "category": {
+          "text": "[ERROR] Gemini SDK call failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-2.5-flash-lite\nPlease retry in 34.340379944s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash-lite\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 15\n}\n, retry_delay {\n  seconds: 34\n}\n]"
+        },
+        "action_items": [
+          "[ERROR] Gemini SDK call failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit.",
+          "* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-2.5-flash-lite",
+          "Please retry in 34.124568304s. [links {",
+          "description: \"Learn more about Gemini API quotas\"",
+          "url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"",
+          "}",
+          ", violations {",
+          "quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"",
+          "quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"",
+          "quota_dimensions {",
+          "key: \"model\"",
+          "value: \"gemini-2.5-flash-lite\"",
+          "}",
+          "quota_dimensions {",
+          "key: \"location\"",
+          "value: \"global\"",
+          "}",
+          "quota_value: 15",
+          "}",
+          ", retry_delay {",
+          "seconds: 34",
+          "}",
+          "]"
+        ]
+      }
+    },
+    {
+      "time": "2025-11-20 15:20:26.884329",
+      "type": "ingest_batch",
+      "result": {
+        "email_idx": 10,
+        "category": {
+          "text": "[ERROR] Gemini SDK call failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-2.5-flash-lite\nPlease retry in 33.850069117s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash-lite\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 15\n}\n, retry_delay {\n  seconds: 33\n}\n]"
+        },
+        "action_items": [
+          "[ERROR] Gemini SDK call failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit.",
+          "* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-2.5-flash-lite",
+          "Please retry in 33.575074898s. [links {",
+          "description: \"Learn more about Gemini API quotas\"",
+          "url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"",
+          "}",
+          ", violations {",
+          "quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"",
+          "quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"",
+          "quota_dimensions {",
+          "key: \"model\"",
+          "value: \"gemini-2.5-flash-lite\"",
+          "}",
+          "quota_dimensions {",
+          "key: \"location\"",
+          "value: \"global\"",
+          "}",
+          "quota_value: 15",
+          "}",
+          ", retry_delay {",
+          "seconds: 33",
+          "}",
+          "]"
+        ]
+      }
+    },
+    {
+      "time": "2025-11-20 15:20:26.884356",
+      "type": "ingest_batch",
+      "result": {
+        "email_idx": 11,
+        "category": {
+          "text": "[ERROR] Gemini SDK call failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-2.5-flash-lite\nPlease retry in 33.357506209s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash-lite\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 15\n}\n, retry_delay {\n  seconds: 33\n}\n]"
+        },
+        "action_items": [
+          "[ERROR] Gemini SDK call failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit.",
+          "* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-2.5-flash-lite",
+          "Please retry in 33.129560257s. [links {",
+          "description: \"Learn more about Gemini API quotas\"",
+          "url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"",
+          "}",
+          ", violations {",
+          "quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"",
+          "quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"",
+          "quota_dimensions {",
+          "key: \"model\"",
+          "value: \"gemini-2.5-flash-lite\"",
+          "}",
+          "quota_dimensions {",
+          "key: \"location\"",
+          "value: \"global\"",
+          "}",
+          "quota_value: 15",
+          "}",
+          ", retry_delay {",
+          "seconds: 33",
+          "}",
+          "]"
+        ]
+      }
+    },
+    {
+      "time": "2025-11-20 15:34:08.561045",
+      "type": "chat",
+      "email_idx": 0,
+      "question": "when is the deadline",
+      "output": "The deadline is Friday. \"We need a decision by Friday.\""
+    },
+    {
+      "time": "2025-11-20 15:35:08.095303",
+      "type": "chat",
+      "email_idx": 10,
+      "question": "Who sent this email",
+      "output": "Karen sent this email."
+    },
+    {
+      "time": "2025-11-20 15:35:15.473282",
+      "type": "extract_actions",
+      "email_idx": 10,
+      "output": [
+        "```json",
+        "[",
+        "\"Confirm interest in speaking at the tech conference by Nov 3.\"",
+        "]",
+        "```"
+      ]
+    },
+    {
+      "time": "2025-11-20 15:35:34.728451",
+      "type": "categorize",
+      "email_idx": 10,
+      "output": {
+        "labels": [
+          "conference invitation",
+          "speaking engagement"
+        ],
+        "priority": "high",
+        "summary": "Invitation to speak at a tech conference. Confirmation needed by November 3rd."
+      }
+    },
+    {
+      "time": "2025-11-20 15:36:41.840831",
+      "type": "categorize",
+      "email_idx": 0,
+      "output": {
+        "labels": [
+          "marketing",
+          "budget",
+          "approval"
+        ],
+        "priority": "high",
+        "summary": "Alice needs approval for the Q2 marketing budget by Friday. The budget details are attached."
+      }
+    },
+    {
+      "time": "2025-11-20 15:37:08.569737",
+      "type": "categorize",
+      "email_idx": 10,
+      "output": {
+        "labels": [
+          "conference invitation",
+          "speaking engagement"
+        ],
+        "priority": "high",
+        "summary": "Invitation to speak at a tech conference. Confirmation needed by November 3rd."
+      }
+    },
+    {
+      "time": "2025-11-20 15:37:39.742301",
+      "type": "extract_actions",
+      "email_idx": 4,
+      "output": [
+        "```json",
+        "[",
+        "\"Update servers by Nov 10\",",
+        "\"Review attached instructions\"",
+        "]",
+        "```"
+      ]
+    },
+    {
+      "time": "2025-11-20 15:39:17.016874",
+      "type": "categorize",
+      "email_idx": 2,
+      "output": {
+        "labels": [
+          "invoice",
+          "payment reminder",
+          "overdue"
+        ],
+        "priority": "high",
+        "summary": "Invoice INV-2025-017 is 10 days overdue. Payment or discussion is requested."
+      }
+    },
+    {
+      "time": "2025-11-20 15:39:25.353557",
+      "type": "extract_actions",
+      "email_idx": 0,
+      "output": [
+        "```json",
+        "[",
+        "\"Approve the Q2 marketing budget\",",
+        "\"Make a decision by Friday\"",
+        "]",
+        "```"
+      ]
+    }
+  ]
+}
