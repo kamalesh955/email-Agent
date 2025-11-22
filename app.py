@@ -199,6 +199,56 @@ with col2:
                     })
                     save_json("saved_results.json", results)
     
+    # Handle Draft Reply separately with edit capability
+    elif action == "Draft Reply":
+        # Initialize draft in session state
+        if "current_draft" not in st.session_state:
+            st.session_state.current_draft = None
+        
+        if st.button("Generate Draft"):
+            with st.spinner("Generating draft..."):
+                thread_context = collect_thread_context(inbox, email.get("thread_id"))
+                out = draft_reply(
+                    email, prompt_template, temperature, max_tokens, thread_context=thread_context
+                )
+                st.session_state.current_draft = out
+        
+        # Show draft editor if draft exists
+        if st.session_state.current_draft is not None:
+            st.subheader("Draft Reply")
+            draft_text = st.text_area(
+                "Edit your draft:", 
+                value=st.session_state.current_draft, 
+                height=200,
+                key="draft_editor"
+            )
+            
+            col_save, col_clear = st.columns(2)
+            
+            with col_save:
+                if st.button("💾 Save Draft"):
+                    # Save the edited draft
+                    draft_record = {
+                        "time": str(datetime.utcnow()),
+                        "email_idx": selected_idx,
+                        "subject": f"Re: {email['subject']}",
+                        "body": draft_text,
+                        "metadata": {
+                            "category": email.get("category"),
+                            "action_items": email.get("action_items")
+                        }
+                    }
+                    results["drafts"].append(draft_record)
+                    save_json("saved_results.json", results)
+                    st.success("Draft saved successfully!")
+                    st.session_state.current_draft = None
+                    st.rerun()
+            
+            with col_clear:
+                if st.button("🗑️ Clear Draft"):
+                    st.session_state.current_draft = None
+                    st.rerun()
+    
     # Handle other actions with Run Action button
     else:
         if st.button("Run Action"):
@@ -242,30 +292,6 @@ with col2:
                     else:
                         st.write(out)
 
-                elif action == "Draft Reply":
-                    thread_context = collect_thread_context(inbox, email.get("thread_id"))
-                    out = draft_reply(
-                        email, prompt_template, temperature, max_tokens, thread_context=thread_context
-                    )
-
-                    st.subheader("Draft Reply")
-                    draft_text = st.text_area("Draft:", value=out, height=200)
-
-                    # Save metadata
-                    draft_record = {
-                        "time": str(datetime.utcnow()),
-                        "email_idx": selected_idx,
-                        "subject": f"Re: {email['subject']}",
-                        "body": draft_text,
-                        "metadata": {
-                            "category": email.get("category"),
-                            "action_items": email.get("action_items")
-                        }
-                    }
-                    results["drafts"].append(draft_record)
-                    save_json("saved_results.json", results)
-                    st.success("Draft saved.")
-
 
 # ============================================================
 # COLUMN 3 – PROMPT EDITOR + RESULTS
@@ -283,11 +309,11 @@ with col3:
         save_json("prompts.json", prompts)
         st.success("Prompt updated.")
 
-
+    st.markdown("---")
 
     st.header("📄 Draft Viewer")
 
-    # Load saved results
+    # Reload results to show latest drafts
     results = load_json("saved_results.json")
     drafts = results.get("drafts", [])
 
@@ -307,6 +333,3 @@ with col3:
                 st.json(draft.get("metadata", {}))
 
                 st.markdown("---")
-
-
-    
