@@ -271,28 +271,23 @@ with col2:
 # COLUMN 3 – PROMPT EDITOR + RESULTS
 # ============================================================
 with col3:
+    st.header("🧠 Prompt Brain")
 
-    st.header("📄 Draft Viewer")
+    prompt_names = list(prompts.keys())
+    chosen_prompt = st.selectbox("Select Prompt Template:", prompt_names)
 
-    # Load saved results
-    results = load_json("saved_results.json")
-    drafts = results.get("drafts", [])
+    text = st.text_area("Edit prompt template:", prompts[chosen_prompt]["template"], height=200)
 
-    if len(drafts) == 0:
-        st.info("No drafts available yet.")
-    else:
-        for i, draft in enumerate(drafts):
-            with st.expander(f"Draft #{i+1} — {draft.get('subject', 'No Subject')}"):
-                
-                st.write(f"**Time:** {draft.get('time')}")
-                st.write(f"**Email Index:** {draft.get('email_idx')}")
+    if st.button("Save Prompt"):
+        prompts[chosen_prompt]["template"] = text
+        save_json("prompts.json", prompts)
+        st.success("Prompt updated.")
 
-                st.subheader("✉️ Draft Body")
-                st.write(draft.get("body", ""))
+    st.markdown("---")
+    st.header("📊 Saved Results")
 
-                st.subheader("📌 Metadata")
-                st.json(draft.get("metadata", {}))
+    if st.button("Reload Data"):
+        st.rerun()
 
-                st.markdown("---")
-
-    
+    st.write(f"Saved Drafts: {len(results.get('drafts', []))}")
+    st.write(f"Saved Analyses: {len(results.get('analyses', []))}")
