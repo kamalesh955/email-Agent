@@ -5,24 +5,7 @@
     "subject": "Request: Q2 marketing budget approval",
     "date": "2025-09-01",
     "body": "Hi,\n\nCan you approve the Q2 marketing budget? We need a decision by Friday. Attached are the numbers.\n\nThanks,\nAlice",
-    "archived": true,
-    "category": {
-      "labels": [
-        "marketing",
-        "budget",
-        "approval"
-      ],
-      "priority": "high",
-      "summary": "Alice needs approval for the Q2 marketing budget by Friday. The budget details are attached."
-    },
-    "action_items": [
-      "```json",
-      "[",
-      "\"Approve the Q2 marketing budget\",",
-      "\"Make a decision by Friday\"",
-      "]",
-      "```"
-    ]
+    "archived": true
   },
   {
     "from": "bob@startup.com",
@@ -38,16 +21,7 @@
     "subject": "Invoice INV-2025-017 (overdue)",
     "date": "2025-10-15",
     "body": "Dear team,\n\nOur records show invoice INV-2025-017 is overdue by 10 days. Please arrange payment or contact us to discuss.\n\nBest,\nCarol",
-    "archived": false,
-    "category": {
-      "labels": [
-        "invoice",
-        "payment reminder",
-        "overdue"
-      ],
-      "priority": "high",
-      "summary": "Invoice INV-2025-017 is 10 days overdue. Payment or discussion is requested."
-    }
+    "archived": false
   },
   {
     "from": "dave@partner.org",
@@ -63,15 +37,7 @@
     "subject": "Security patch notice - action required",
     "date": "2025-11-01",
     "body": "All,\n\nA critical security patch is available. Please update servers by Nov 10. See attached instructions.\n\n- Security Team",
-    "archived": true,
-    "action_items": [
-      "```json",
-      "[",
-      "\"Update servers by Nov 10\",",
-      "\"Review attached instructions\"",
-      "]",
-      "```"
-    ]
+    "archived": true
   },
   {
     "from": "frank@hr.com",
@@ -119,15 +85,7 @@
     "subject": "Invitation: Tech conference speaker?",
     "date": "2025-10-30",
     "body": "We invite you to speak at our tech conference. Are you interested? We need confirmation by Nov 3.\n\nBest,\nKaren",
-    "archived": false,
-    "category": {
-      "labels": [
-        "conference invitation",
-        "speaking engagement"
-      ],
-      "priority": "high",
-      "summary": "Invitation to speak at a tech conference. Confirmation needed by November 3rd."
-    }
+    "archived": false
   },
   {
     "from": "li@interns.com",
