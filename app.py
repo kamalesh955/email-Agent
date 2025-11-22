@@ -283,11 +283,30 @@ with col3:
         save_json("prompts.json", prompts)
         st.success("Prompt updated.")
 
-    st.markdown("---")
-    st.header("📊 Saved Results")
 
-    if st.button("Reload Data"):
-        st.rerun()
 
-    st.write(f"Saved Drafts: {len(results.get('drafts', []))}")
-    st.write(f"Saved Analyses: {len(results.get('analyses', []))}")
+    st.header("📄 Draft Viewer")
+
+    # Load saved results
+    results = load_json("saved_results.json")
+    drafts = results.get("drafts", [])
+
+    if len(drafts) == 0:
+        st.info("No drafts available yet.")
+    else:
+        for i, draft in enumerate(drafts):
+            with st.expander(f"Draft #{i+1} — {draft.get('subject', 'No Subject')}"):
+                
+                st.write(f"**Time:** {draft.get('time')}")
+                st.write(f"**Email Index:** {draft.get('email_idx')}")
+
+                st.subheader("✉️ Draft Body")
+                st.write(draft.get("body", ""))
+
+                st.subheader("📌 Metadata")
+                st.json(draft.get("metadata", {}))
+
+                st.markdown("---")
+
+
+    
