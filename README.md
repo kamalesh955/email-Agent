@@ -12,37 +12,27 @@ An intelligent Streamlit-based Email Agent that processes a mock inbox, categori
 - Draft Viewer (full draft history)
 - JSON-backed persistent storage
 
-shell
-Copy code
-
-## 🔧 Installation & Setup
-### 1. Clone the repo
+Installation & Setup
+1. Clone the repository
 git clone https://github.com/kamalesh955/email-Agent.git
 cd email-Agent
 
-shell
-Copy code
-### 2. Install dependencies
+2. Install dependencies
 pip install -r requirements.txt
 
-graphql
-Copy code
-### 3. Set Google API key
-**Windows:**
+3. Set your Google API Key
+
+Windows:
+
 setx GOOGLE_API_KEY "YOUR_API_KEY"
 
-makefile
-Copy code
-**Mac/Linux:**
+
+macOS/Linux:
+
 export GOOGLE_API_KEY="YOUR_API_KEY"
 
-shell
-Copy code
-### 4. Run the app
+4. Run the app
 streamlit run app.py
-
-markdown
-Copy code
 
 ## 📥 Loading the Mock Inbox
 The mock inbox is stored in `inbox.json` and contains 10–20 sample emails (meeting requests, newsletters, deadlines, invoices, project updates, etc.). If deleted, a new sample inbox is auto-generated.
@@ -83,45 +73,5 @@ A full history of drafted replies is available under the Draft Viewer:
 - Timestamp  
 Drafts are **never sent**, only stored.
 
-## 📊 Saved Results
-App shows:
-Saved Drafts: X
-Saved Analyses: Y
 
-markdown
-Copy code
-Drafts = reply drafts  
-Analyses = categorize + extract + chat + pipeline logs
 
-## 🎥 Demo Video Requirements
-Your demo must show:
-- Loading inbox
-- Editing prompts
-- Running ingestion pipeline
-- Viewing results
-- Chat with Email Agent
-- Draft reply creation
-- High-priority filter
-
-## ✔ Evaluation Criteria Mapping
-| Requirement | Status |
-|------------|--------|
-| Inbox ingestion | ✔ |
-| Prompt-driven architecture | ✔ |
-| Categorization | ✔ |
-| Action extraction | ✔ |
-| Draft generation | ✔ |
-| Chat agent | ✔ |
-| Prompt editor | ✔ |
-| UI design | ✔ |
-| Error handling | ✔ |
-| Drafts stored (not sent) | ✔ |
-| Mock inbox (10–20 emails) | ✔ |
-| Code quality & separation | ✔ |
-| Deployment | ✔ |
-
-## 📝 Author
-**Kamalesh S**
-
-## 🎉 Final Notes
-This project fully implements the prompt-driven Email Productivity Agent with categorization, action extraction, 
