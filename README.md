@@ -12,27 +12,25 @@ An intelligent Streamlit-based Email Agent that processes a mock inbox, categori
 - Draft Viewer (full draft history)
 - JSON-backed persistent storage
 
-Installation & Setup
-1. Clone the repository
+## 🔧 Installation & Setup
+
+### 1. Clone the repository
 git clone https://github.com/kamalesh955/email-Agent.git
 cd email-Agent
 
-2. Install dependencies
+### 2. Install dependencies
 pip install -r requirements.txt
 
-3. Set your Google API Key
-
-Windows:
-
+### 3. Set your Google API Key
+# Windows
 setx GOOGLE_API_KEY "YOUR_API_KEY"
 
-
-macOS/Linux:
-
+# macOS/Linux
 export GOOGLE_API_KEY="YOUR_API_KEY"
 
-4. Run the app
+### 4. Run the app
 streamlit run app.py
+
 
 ## 📥 Loading the Mock Inbox
 The mock inbox is stored in `inbox.json` and contains 10–20 sample emails (meeting requests, newsletters, deadlines, invoices, project updates, etc.). If deleted, a new sample inbox is auto-generated.
