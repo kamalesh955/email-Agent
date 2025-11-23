@@ -12,16 +12,6 @@ An intelligent Streamlit-based Email Agent that processes a mock inbox, categori
 - Draft Viewer (full draft history)
 - JSON-backed persistent storage
 
-## 📦 Project Structure
-email-agent/
-├── app.py
-├── utils.py
-├── inbox.json
-├── prompts.json
-├── saved_results.json
-├── requirements.txt
-└── README.md
-
 shell
 Copy code
 
