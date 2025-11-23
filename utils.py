@@ -134,8 +134,7 @@ def call_llm(prompt: str, temperature: float = 0.2, max_output_tokens: int = 300
     try:
         genai.configure(api_key=api_key)
 
-        # IMPORTANT:
-        # Your API key supports ONLY the v1beta models like gemini-pro
+        # API key 
         model = genai.GenerativeModel("models/gemini-2.5-flash-lite")
 
         response = model.generate_content(

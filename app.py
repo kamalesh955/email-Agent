@@ -35,15 +35,11 @@ prompts = load_json("prompts.json")
 inbox = load_json("inbox.json")
 results = load_json("saved_results.json")
 
-# -------------------------
 # Page Layout
-# -------------------------
 col1, col2, col3 = st.columns([2, 3, 2])
 
 
-# ============================================================
 # COLUMN 1 – INBOX VIEWER
-# ============================================================
 with col1:
     st.header("📬 Inbox")
 
@@ -108,17 +104,13 @@ with col1:
         st.rerun()
 
 
-# ============================================================
 # COLUMN 2 – AGENT ACTIONS
-# ============================================================
 with col2:
     st.header("🤖 Email Agent")
 
     st.markdown("Process your inbox with LLM-powered tools.")
 
-    # --------------------------
     # INGESTION PIPELINE BUTTON
-    # --------------------------
     if st.button("⚡ Run ingestion pipeline (categorize + extract actions for ALL emails)"):
         with st.spinner("Processing all emails..."):
             inbox, ingestion_results = run_ingestion_pipeline(
@@ -139,9 +131,7 @@ with col2:
 
     st.markdown("---")
 
-    # --------------------------
     # Actions on selected email
-    # --------------------------
     st.subheader("Email Actions")
     action = st.radio(
         "Select an action:",
@@ -293,9 +283,7 @@ with col2:
                         st.write(out)
 
 
-# ============================================================
 # COLUMN 3 – PROMPT EDITOR + RESULTS
-# ============================================================
 with col3:
     st.header("🧠 Prompt Brain")
 
